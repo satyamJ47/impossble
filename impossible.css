@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: #000;
+}
+
+h2{
+    /* mine */
+    margin-top: 20%;
+    font-size: 6em;
+    font-weight: 700;
+    color: rgb(39, 39, 41);
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+h2 span{
+    transition: 0.5s;
+}
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+h2:hover span:nth-child(1)::after{
+    content: "'";
+}
+h2:hover span:nth-child(2){
+    margin-left: 40px;
+}
+h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #ffffff,
+                 0 0 20px #ffffff,
+                 0 0 40px #ffffff,
+                 0 0 60px #ffffff,
+                 0 0 120px #fff;
+}
